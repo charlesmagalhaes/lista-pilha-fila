@@ -53,5 +53,26 @@ public class ListaPilha {
 		}
 		
 	}
+	
+	public void pop() {
+		this.topo--;
+	}
+	
+	public boolean empty() {
+		return this.topo == 0;
+	}
+	
+	public boolean full() {
+		return this.topo == this.tam_max;
+	}
+	
+	public Agenda top() {
+		return itens[this.topo-1];
+		
+	}
+	
+	public int size() {
+		return this.topo;
+	}
 
 }
