@@ -44,7 +44,14 @@ public class aplicacao {
 						break;
 					
 					case 2: 
-						agendaPessoal.pop();
+						if(!agendaPessoal.empty()) {
+							agendaPessoal.pop();
+							System.out.println("Item removido com sucesso!!!");
+						}else {
+							
+							System.out.println("A lista está vazia, assim não tem como remover");
+						}
+						
 					
 						break;
 					case 3: 
@@ -55,7 +62,7 @@ public class aplicacao {
 						break;
 					case 4: 
 						
-						System.out.println(agendaPessoal.top().nome);
+						System.out.println("Topo da lista: "+agendaPessoal.top().nome+" - "+agendaPessoal.top().tel);
 						System.out.println("-----------------------------------------------------");
 						
 						break;
