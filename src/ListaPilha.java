@@ -74,5 +74,22 @@ public class ListaPilha {
 	public int size() {
 		return this.topo;
 	}
+	
+	public String changeTopBottom() {
+		String mensagem;
+	
+		if(this.topo == 1) {
+			mensagem = "Existem somente um elemento na pilha";
+		} else if(empty()) {
+			mensagem = "Pilha vazia";
+		}else {
+			Agenda itemTemporario = itens[this.topo-1];
+			itens[this.topo-1] = itens[0];
+			itens[0] = itemTemporario;
+			
+			mensagem = "Troca feita com sucesso!!!";
+		}
+		return mensagem;
+	}
 
 }
