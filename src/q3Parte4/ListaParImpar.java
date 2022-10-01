@@ -34,19 +34,19 @@ public class ListaParImpar {
 	
 	public String exibir() {
 		String lista="";
-		for(int i=0; i< this.topoImpar;i++) {
-			if(i == 0) {
+		for(int i=this.topoImpar; i> 0;i--) {
+			if(i == this.topoImpar) {
 				lista = "Lista dos Numeros Impar(es)";
 			}
-			lista += "\n"+listaImpar[i];
+			lista += "\n"+listaImpar[i-1];
 					
 		}
 		
-		for(int i=0; i< this.topoPar;i++) {
-			if(i == 0) {
+		for(int i=this.topoPar; i> 0;i--) {
+			if(i == this.topoPar) {
 				lista += "\nLista dos Numeros Par(es)";
 			}
-			lista += "\n"+listaPar[i];
+			lista += "\n"+listaPar[i-1];
 		}
 		
 		return lista;
