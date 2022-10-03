@@ -19,6 +19,9 @@ public class aplicacaoQ3P4 {
 		System.out.println("-----------------------------------");
 		System.out.println(listaNumeros.exibir());
 		
+		String teste = "D";
+		System.out.println(teste.toLowerCase() == teste);
+		
 		ler.close();
 	}
 
